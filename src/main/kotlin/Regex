@@ -1,0 +1,7 @@
+fun main() {
+    val S = readLine()!!
+    val target:CharSequence  = S;
+    val regex = Regex(pattern = ".*algo.*")
+    if(regex.containsMatchIn(target)) print("Yes") else print("No")
+
+}
