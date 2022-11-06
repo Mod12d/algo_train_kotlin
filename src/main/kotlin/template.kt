@@ -11,5 +11,5 @@ fun main() {
        
     fp.println(arr)
     fp.close()
-    }
 }
+
