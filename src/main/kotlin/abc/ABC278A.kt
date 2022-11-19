@@ -1,3 +1,4 @@
+//git
 fun main(){
     val (N,K) = readLine()!!.split(" ").map{it.toInt()}
     val A = ArrayDeque(readLine()!!.split(" ").map{it.toInt()}.toMutableList())
