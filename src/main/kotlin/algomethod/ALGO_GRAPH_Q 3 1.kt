@@ -3,7 +3,7 @@ import java.io.PrintWriter
 
 fun main() {
     val fp = PrintWriter(System.out)
-    val (N,M,X) = readLine()!!.split(" ").map{it.toInt()}
+    val (N,M) = readLine()!!.split(" ").map{it.toInt()}
     val graph = HashMap<Int,PriorityQueue<Int>>()
     val reader = System.`in`.bufferedReader()
     val arr = (0 until M).map{reader.readLine()!!.split(" ").map {it.toInt()}}
