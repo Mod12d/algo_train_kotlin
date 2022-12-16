@@ -1,3 +1,4 @@
+//@optin class
 import java.util.PriorityQueue
 import java.io.PrintWriter
 
