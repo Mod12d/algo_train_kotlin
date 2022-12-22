@@ -1,13 +1,10 @@
 //https://algo-method.com/tasks/306
-import kotlin.math.*
 
 fun main() {
     val a =  readLine()!!.split(" ").map{it.toInt()}.toMutableList()
     val dp : MutableList<MutableList<Int>> = ArrayList()
     // replace later
-//    for(i in 0..3){
-//        dp[0][i].push(0)
-//    }
+        dp[0]= mutableListOf(0,0,0,0)
     // 0 case
     for(i in 0..3){
         dp[0][i] = a[i]
