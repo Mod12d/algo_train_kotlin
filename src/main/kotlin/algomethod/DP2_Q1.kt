@@ -10,12 +10,14 @@ fun main() {
     }
     // n case
     for(i in 1..3){
-        for(j in 0..2 ){
-            if(j==0) dp[i][j] = dp[i-1][j]+dp[i-1][j]
-            if(j==1 or 2) dp[i][j] = dp[i-1][j]+dp[i-1][j]+dp[i-1][j+1]
-            if(j==3) dp[i][j] = dp[i-1][j]+dp[i-1][j+1]
+        for(j in 0..3 ){
+            if(j>0 && j<3)
+            dp[i][j] = dp[i-1][j]+dp[i-1][j-1]+dp[i-1][j+1]
+            else if(j==0)
+             dp[i][j] = dp[i-1][j]+dp[i-1][j+1]
+            else
+             dp[i][j] = dp[i-1][j]+dp[i-1][j-1]
         }
     }
-
-    print(dp)
+    print(dp[3][3])
 }
