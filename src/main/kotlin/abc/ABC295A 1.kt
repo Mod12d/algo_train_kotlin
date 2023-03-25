@@ -14,7 +14,7 @@ fun numMap(n:String):Int{
         "9"->{ret= 9}
     }
     return ret
-    //
+    
 }
 
 fun main() {
