@@ -4,7 +4,7 @@ import kotlin.math.*
 fun main(args: Array<String>) {
     val (n,l,r) = readLine()!!.split(" ").map{it.toInt()}
     val a = readLine()!!.split(" ").map{it.toInt()}.toIntArray()
-    var cnt = l
+    var cnt = Integer.MAX_VALUE
     for(v in a){
         for( i in l..r){
             if(abs(i-v)>=i)cnt=i
@@ -13,3 +13,4 @@ fun main(args: Array<String>) {
         
     }
 }
+//EE
